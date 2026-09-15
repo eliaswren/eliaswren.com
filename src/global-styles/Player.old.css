@@ -1,0 +1,172 @@
+.audio-player-container{
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    /* border-radius: 3px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    /* width: max(250px, 25%); */
+    height: 100px;
+}
+
+.audio-controls{
+    /* display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255); */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+}
+
+.audio-control-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+.audio-control-icon {
+    fill: rgb(100, 100, 100);
+    stroke: rgb(100, 100, 100);
+    cursor: pointer;
+}
+
+.audio-control-icon:hover {
+    fill: rgb(155, 155, 155);
+    stroke: rgb(155, 155, 155);
+}
+
+.song-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.volume-slider-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.volume-slider {
+    max-width: 75px;
+}
+
+.track-seeker-container {
+    display:grid;
+    grid-template-columns: min-content auto min-content;
+    width: 100%;
+    align-items: center;
+}
+
+.time-string {
+    padding-right: 8px;
+}
+.duration-string {
+    padding-left: 8px;
+}
+
+
+/* TRACK SEEKER STYLING */
+
+.track-seeker{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background: transparent;
+    cursor:pointer;
+}
+
+/* CHROME */
+
+.track-seeker::-webkit-slider-runnable-track{
+    height: 2px;
+    background: rgb(125, 125, 125);
+}
+
+.track-seeker::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    border: 2px solid rgb(100, 100, 100);
+    background: rgb(255, 255, 255);  
+    margin-top: -6px;        /* (track_height / 2) - (thumb_height / 2) */  
+}
+
+.track-seeker::-webkit-slider-thumb:hover {
+    border: 2px solid rgb(155, 155, 155);
+}
+
+.track-seeker::-moz-range-track {
+    height: 2px;
+    background: rgb(125, 125, 125);    
+}
+
+.track-seeker::-moz-range-thumb {
+    appearance: none;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 2px solid rgb(100, 100, 100);
+    background: rgb(255, 255, 255);  
+    margin-top: -6px;        /* (track_height / 2) - (thumb_height / 2) */  
+}
+.track-seeker::-moz-range-thumb:hover {
+    border: 2px solid rgb(155, 155, 155);
+}
+
+
+/* VOLUME SLIDER STYLING */
+
+.volume-slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background: transparent;
+    cursor:pointer;
+}
+
+.volume-slider::-webkit-slider-runnable-track{
+    height: 2px;
+    border-radius: 1px;
+    background: rgb(125, 125, 125);
+}
+
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    border: 2px solid rgb(100, 100, 100);
+    background: rgb(255, 255, 255);  
+    margin-top: -6px;        /* (track_height / 2) - (thumb_height / 2) */  
+}
+.volume-slider::-webkit-slider-thumb:hover {
+    border: 2px solid rgb(155, 155, 155);
+}
+
+.volume-slider::-moz-range-track {
+    height: 2px;
+    background: rgb(125, 125, 125);    
+}
+
+.volume-slider::-moz-range-thumb {
+    appearance: none;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 2px solid rgb(100, 100, 100);
+    background: rgb(255, 255, 255);  
+    margin-top: -6px;        /* (track_height / 2) - (thumb_height / 2) */  
+}
+.volume-slider::-moz-range-thumb:hover {
+    border: 2px solid rgb(155, 155, 155);
+}

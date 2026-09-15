@@ -1,0 +1,49 @@
+#root{
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+#main-container-cs {
+    min-height: 100vh;
+    background-color: #001408;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+#cs-hover-c{
+    padding-top: 4vh;
+    color: #9ca3af;
+    text-decoration-color: rgba(255, 255, 255, 0.534);
+    transition: letter-spacing 0.2s, text-decoration-color 0.15s ease-in-out;
+    pointer-events: none;
+    cursor:default;
+}
+
+#header-c, #music-hover-c {
+    padding-top: 8vh;
+    display: inline-block;
+    color:#9ca3af;
+    transition: letter-spacing 0.2s, text-decoration-color 0.15s ease-in-out;
+    text-decoration-color: rgba(255, 255, 255, 0.0);
+}
+
+#cs-hover-c{
+    letter-spacing: 15%;
+    text-decoration-color: rgba(255, 255, 255, 0.534);
+}
+
+#music-hover-c:hover{
+    letter-spacing: 15%;
+    text-decoration-color: rgba(255, 255, 255, 0.534);
+}
+
+#header-c:hover{
+    letter-spacing: 15%;
+    text-decoration-color: rgba(255, 255, 255, 0.534);
+}
+
+#main-container-cs:has(#music-hover-c:hover) #cs-hover-c, #main-container-cs:has(#header-c:hover) #cs-hover-c{
+  letter-spacing: normal;
+  text-decoration-color: rgba(255, 255, 255, 0.0);
+}

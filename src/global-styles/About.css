@@ -1,0 +1,26 @@
+#about-me{
+    max-width: 90vw;
+    margin-top: 55px;
+}
+
+#about-separator-line {
+    border:none;
+    height: 2px;
+    background-color: #fa0000;
+}
+
+#about-header{
+    font-size: 150%;
+    font-weight: larger;
+    letter-spacing: 20%;
+    padding-top: 1%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#about-body{
+    font-size: 100%;  
+    width: 100%;
+    text-wrap: wrap;
+    overflow: hidden;
+}

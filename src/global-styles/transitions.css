@@ -1,0 +1,68 @@
+@view-transition{
+    navigation: auto;
+}
+
+@keyframes on-enter-source {
+    from {
+        transform: translate(0vh, -4vh)
+    }
+}
+
+@keyframes on-enter-current {
+    from {
+        transform: translate(0vh, 4vh)
+    }
+}
+
+@keyframes on-exit-current {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 0;
+        transform: translate(0vh, 4vh)
+    } 
+}
+
+@keyframes on-exit-target {
+    from{
+        opacity: 0;
+    } to {
+        opacity: 0;
+        transform: translate(0vh, -4vh)
+    }
+}
+
+.current {
+    view-transition-name: current;
+}
+
+.target {
+    view-transition-name: target;
+}
+
+.source {
+    view-transition-name: src;
+}
+
+::view-transition-group(current),
+::view-transition-group(target),
+::view-transition-group(src) {
+    animation-timing-function: cubic-bezier(0.2, 1, 1, 1);
+    animation-duration: 0.3s;  
+}
+
+::view-transition-new(src) {
+    animation-name: on-enter-source;
+}
+
+::view-transition-new(current) {
+    animation-name: on-enter-current;
+}
+
+::view-transition-old(src) {
+    animation-name: on-exit-current;
+}
+
+::view-transition-old(target) {
+    animation-name: on-exit-target;
+}
