@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import '../../global-styles/Music.css'
 import '../../global-styles/transitions.css'
 import { Titlebar } from '../home/Titlebar'
@@ -6,23 +7,20 @@ import { Footer } from '../home/Footer'
 import { About } from './About'
 import { Video } from './Video'
 import { Player } from './Player'
+import { SongSelection } from './SongSelection'
  
 const Music = () => {
     navigationClassRef.updateCurrent("music")
+    const [currentTrackPath, setCurrentTrackPath] = useState("/assets/audio/Bode.wav")
+    const [currentTrackName, setCurrentTrackName] = useState("Bode")
 
     return (
         <div id="main-container-music">
             <Titlebar activateInstance={dummy} musicID="music-hover-m" csID="cs-hover-m" headerID="header-m"/>
             <div id="portfolio-and-demo-reel">
                 <div id="portfolio-container">
-                    <Player src={null} title="player 1"/>
-                    <Player src={null} title="player 2"/>
-                    <Player src={null} title="player 3"/>
-                    <Player src={null} title="player 4"/>
-                    <Player src={null} title="player 5"/>
-                    <Player src={null} title="player 6"/>
-                    <Player src={null} title="player 7"/>
-                    <Player src={null} title="player 8"/>
+                    <Player src={currentTrackPath} title={currentTrackName}/>
+                    <SongSelection setCurrentTrackName={setCurrentTrackName} setCurrentTrackPath={setCurrentTrackPath} currentTrackName={currentTrackName}/>
                 </div>
                 <div id="demo-reel">
                     <Video videoID="EBw8OMz3DKc"/>
