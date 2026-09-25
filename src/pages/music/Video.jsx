@@ -18,7 +18,7 @@ export const Video = ({videoID}) => {
             width={`${Math.max(windowWidth * 0.4, 300)}`}
             height={`${Math.min(windowHeight, 440)}`}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen;"
-            class="video-iframe"
+            className="video-iframe"
         />
     )
 }

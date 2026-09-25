@@ -73,6 +73,12 @@ export const Player = ({src, title}) => {
             parseTime(currSec)
         )
     }, [currSec])
+
+    useEffect(() => {
+        setIsPlaying(false)
+        setNewTime(0)
+        setCurrTime(0)
+    }, [src])
     
     return (
         <div className="audio-player-container">
@@ -147,6 +153,8 @@ export const Player = ({src, title}) => {
             }}
             onLoadedMetadata={(event) => {
                 setDurationString(parseTime(event.currentTarget.duration))
+                setCurrTime(0)
+                setCurrSec(0)
             }}
             id={elementID}
             />

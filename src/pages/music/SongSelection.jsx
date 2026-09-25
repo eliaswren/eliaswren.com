@@ -5,12 +5,8 @@ import "../../global-styles/SongSelection.css"
 /* 
 
 TO DO: 
-    - Fix player seeker moving to middle of bar when new song is selected
     - Correct initial behavior (select first song in list)
     - Add hover and selected styling behavior to track selection options. 
-
-    - tmp for git push test
-
 */
 export const SongSelection = ({setCurrentTrackPath, setCurrentTrackName, currentTrackName}) => {
     const [currentSelection, setCurrentSelection] = useState(currentTrackName)
