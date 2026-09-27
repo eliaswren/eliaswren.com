@@ -22,7 +22,9 @@ export const Player = ({src, title}) => {
     // PLAYBACK CONTROLS
     const [isPlaying, setIsPlaying] = useState(false)
     const playPause = () => {
-        setIsPlaying(!isPlaying)
+        if(audio && src) {
+            setIsPlaying(!isPlaying)
+        }
     }
     useEffect(() => {
         if(audio){
@@ -124,7 +126,8 @@ export const Player = ({src, title}) => {
                     min={0}
                     max={1}
                     step={0.01}
-                    onMouseDown={() => {
+                    onMouseDown={(event) => {
+                        setNewTime(event.currentTarget.value)
                         setIsSeeking(true)
                     }}
                     onMouseUp={(event)=> {

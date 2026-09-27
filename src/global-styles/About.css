@@ -6,7 +6,8 @@
 #about-separator-line {
     border:none;
     height: 2px;
-    background-color: #fa0000;
+    /* background-color: #fa0000; */
+    background-color: #fa0000d5;
 }
 
 #about-header{

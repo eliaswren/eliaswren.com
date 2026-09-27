@@ -12,9 +12,9 @@ export const SongSelection = ({setCurrentTrackPath, setCurrentTrackName, current
     const [currentSelection, setCurrentSelection] = useState(null)
     useEffect(() => {
         if(currentSelection) {
-            currentSelection.style.marginLeft = "6vw"
+            currentSelection.style.marginLeft = "2vw"
             currentSelection.style.letterSpacing = "0.175em"
-            currentSelection.style.textDecorationColor = "rgba(85, 85, 85, 0.53)"
+            currentSelection.style.textDecorationColor = "rgba(255, 255, 255, 0.534)"
         }
     }, [currentSelection])
 
@@ -32,11 +32,11 @@ export const SongSelection = ({setCurrentTrackPath, setCurrentTrackName, current
         if(currentSelection && (hoverTarget != currentSelection)) {
             currentSelection.style.letterSpacing = "0"
             currentSelection.style.textDecorationColor = "rgba(0, 0, 0, 0)"
-            hoverTarget.style.textDecorationColor = "rgba(85, 85, 85, 0.53)"
+            hoverTarget.style.textDecorationColor = "rgba(255, 255, 255, 0.534)"
             hoverTarget.style.letterSpacing = "0.175em"
         } else if (!currentSelection) {
             hoverTarget.style.letterSpacing = "0.175em"
-            hoverTarget.style.textDecorationColor = "rgba(85, 85, 85, 0.53)"
+            hoverTarget.style.textDecorationColor = "rgba(255, 255, 255, 0.534)"
         }
     }
     const removeHoverStyle = (event) => {
@@ -45,7 +45,7 @@ export const SongSelection = ({setCurrentTrackPath, setCurrentTrackName, current
             hoverTarget.style.letterSpacing = "0"
             hoverTarget.style.textDecorationColor = "rgba(0, 0, 0, 0)"
             currentSelection.style.letterSpacing = "0.175em"
-            currentSelection.style.textDecorationColor = "rgba(85, 85, 85, 0.53)"
+            currentSelection.style.textDecorationColor = "rgba(255, 255, 255, 0.534)"
         } else if (!currentSelection) {
             hoverTarget.style.letterSpacing = "0"
             hoverTarget.style.textDecorationColor = "rgba(0, 0, 0, 0)"

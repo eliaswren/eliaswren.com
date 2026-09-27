@@ -8,6 +8,7 @@ import { About } from './About'
 import { Video } from './Video'
 import { Player } from './Player'
 import { SongSelection } from './SongSelection'
+import { Contact } from './Contact'
  
 const Music = () => {
     navigationClassRef.updateCurrent("music")
@@ -19,7 +20,8 @@ const Music = () => {
             <Titlebar activateInstance={dummy} musicID="music-hover-m" csID="cs-hover-m" headerID="header-m"/>
             <div id="portfolio-and-demo-reel">
                 <div id="portfolio-container">
-                    <Player src={currentTrackPath} title={currentTrackName}/>
+                    <Player src={currentTrackPath} title={(currentTrackName) ? currentTrackName : "Select a song"}/>
+                    <hr id="player-separator-line"/>
                     <SongSelection setCurrentTrackName={setCurrentTrackName} setCurrentTrackPath={setCurrentTrackPath}/>
                 </div>
                 <div id="demo-reel">
@@ -27,6 +29,7 @@ const Music = () => {
                 </div>
             </div>
             <About/>
+            <Contact/>
             <Footer/>
         </div>
     )

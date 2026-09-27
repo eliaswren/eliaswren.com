@@ -29,17 +29,17 @@
 }
 
 #cs-hover-c{
-    letter-spacing: 15%;
+    letter-spacing: 0.15em;
     text-decoration-color: rgba(255, 255, 255, 0.534);
 }
 
 #music-hover-c:hover{
-    letter-spacing: 15%;
+    letter-spacing: 0.15em;
     text-decoration-color: rgba(255, 255, 255, 0.534);
 }
 
 #header-c:hover{
-    letter-spacing: 15%;
+    letter-spacing: 0.15em;
     text-decoration-color: rgba(255, 255, 255, 0.534);
 }
 
