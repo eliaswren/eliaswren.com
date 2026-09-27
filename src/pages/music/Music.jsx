@@ -11,8 +11,8 @@ import { SongSelection } from './SongSelection'
  
 const Music = () => {
     navigationClassRef.updateCurrent("music")
-    const [currentTrackPath, setCurrentTrackPath] = useState("/assets/audio/Bode.wav")
-    const [currentTrackName, setCurrentTrackName] = useState("Bode")
+    const [currentTrackPath, setCurrentTrackPath] = useState(null)
+    const [currentTrackName, setCurrentTrackName] = useState("")
 
     return (
         <div id="main-container-music">
@@ -20,7 +20,7 @@ const Music = () => {
             <div id="portfolio-and-demo-reel">
                 <div id="portfolio-container">
                     <Player src={currentTrackPath} title={currentTrackName}/>
-                    <SongSelection setCurrentTrackName={setCurrentTrackName} setCurrentTrackPath={setCurrentTrackPath} currentTrackName={currentTrackName}/>
+                    <SongSelection setCurrentTrackName={setCurrentTrackName} setCurrentTrackPath={setCurrentTrackPath}/>
                 </div>
                 <div id="demo-reel">
                     <Video videoID="EBw8OMz3DKc"/>
