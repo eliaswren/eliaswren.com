@@ -1,10 +1,9 @@
 #contact-form-container {
-    background: linear-gradient(0deg,#fa000035 0%, rgba(0, 0, 0, 0) 100%);
+    /* background: linear-gradient(0deg,#fa000035 0%, rgba(0, 0, 0, 0) 100%); */
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 #contact-form-name {
