@@ -7,15 +7,22 @@ export const About = () => {
                 About Me
             </div>
             <hr id="about-separator-line"/>
-            <div id="about-body">
+            {/* <div id="about-body">
                 I'm a composer from California with a love for music production, sound design, and audio tech in general.
                 Most of my songs are made in-the-box using Ableton Live (alongside a laundry list of digital synths), although I play piano as well. 
                 I love to make music for media, and I'm always on the lookout for new projects to work on! 
                 If you're interested in working with me, please don't hesitate to reach out through the contact form below 
                 or via email at contact@eliaswren.com!
-
-                
-            </div>
+            </div> */}
+            <span id="about-body">
+                I'm a composer from California with a love for music production, sound design, and audio tech in general.
+                Most of my songs are made in-the-box using Ableton Live (alongside a laundry list of digital synths), although I play piano as well. 
+                I love to make music for media, and I'm always on the lookout for new projects to work on! 
+                If you're interested in working with me, please don't hesitate to reach out - 
+                I'm still working on setting up a contact form, 
+                but in the meantime you can reach me via email at <a href="mailto:contact@eliaswren.com">contact@eliaswren.com</a>.
+                 
+            </span>
         </div>
 
     )

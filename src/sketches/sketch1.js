@@ -18,7 +18,7 @@ export const sketch1 = (p, brush) => {
         width = p.windowWidth
         height = p.windowHeight
         cnv.parent('sketch1')
-        p.frameRate(6)
+        p.frameRate(4)
         p.pixelDensity(1)
         p.background('#03002c')
     }

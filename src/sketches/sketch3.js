@@ -18,9 +18,9 @@ export const sketch3 = (p, brush) => {
         width = p.windowWidth
         height = p.windowHeight
         cnv.parent('sketch3')
-        p.frameRate(6)
+        p.frameRate(4)
         p.pixelDensity(1)
-        p.background('#03002c')
+        p.background('#00140c')
     }
 
     p.draw = () => {
@@ -28,13 +28,11 @@ export const sketch3 = (p, brush) => {
         brush.load(p)
         brush.noField()
         brush.noHatch()
-        p.background('#001408')
-        brush.set("HB", "#d3b406", 8)
+        p.background('hsl(156, 100%, 4%)')
+        brush.set("2H", "hsl(29, 100%, 50%)", 8)
         let dimension = Math.min(width, height) / 4
-        //brush.circle(0, 0, dimension)
-        //brush.rect(0, 0, dimension, dimension, "center")
         let points = [
-            [0, -height / 8], [-width / 4, height / 8], [width / 4, height / 8]
+            [0, -height / 6], [-width / 4, height / 6], [width / 4, height / 6]
         ]
         brush.polygon(points)
     }

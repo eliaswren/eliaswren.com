@@ -1,6 +1,7 @@
 #about-me{
     max-width: 90vw;
     margin-top: 55px;
+    margin-bottom: 25px;
 }
 
 #about-separator-line {
@@ -24,4 +25,35 @@
     width: 100%;
     text-wrap: wrap;
     overflow: hidden;
+}
+
+/* CS */
+
+#about-separator-line-cs {
+    border:none;
+    height: 2px;
+    /* background-color: #fa0000; */
+    background-color: #a85a00;
+}
+
+#about-header-cs{
+    font-size: 150%;
+    font-weight: larger;
+    letter-spacing: 20%;
+    padding-top: 1%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#about-body-cs {
+    font-size: 100%;  
+    width: 100%;
+    text-wrap: wrap;
+    overflow: hidden;
+}
+
+#about-me-cs {
+    max-width: 90vw;
+    margin-top: 55px;
+    margin-bottom: 25px;
 }

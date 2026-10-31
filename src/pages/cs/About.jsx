@@ -5,17 +5,24 @@ export const About = () => {
                 About Me
             </span>
             <hr id="about-separator-line-cs"/>
-            <span id="about-body-cs">
-                I'm a student at Oregon State University majoring in computer science and minoring in Spanish. 
-                I love tech, and I'm passionate about projects with real, tangible impacts. 
-                In the OSU honors college, my thesis surrounds the development of an app that allows musicians and producers to record 
-                custom impulse responses from their phone, which can then be applied digitally to any given sound*. 
-            </span>
-            <br/>
-            <span id="about-body-sub">
-                * In short, this means that musicians can make digital audio sound like it was recorded in real spaces! 
-                Convolution is fascinating, and if you're interested in digital audio I'd highly recommend learning more about it! 
-            </span>
+            <div id="about-body-cs">
+                <span>
+                    I'm a junior at Oregon State University studying computer science and Spanish. 
+                    I love tech, and I'm passionate about making things - whether that be code, art, music (check out my music page!) or anything in between.
+                    I'm currently planning my honors thesis, which will surround the development of a mobile application for recording impulse responses from a phone.
+                </span>
+                <br/>
+                <br/>
+                . . . 
+                <br/>
+                <br/>
+                <span> 
+                    Forgive the incomplete state of this page, my portfolio and blog sections are under construction. Expect to see more soon! 
+                    In the meantime, take a look at the <a href="https://eliaswren.com/Screenshader-Writeup/">writeup</a> I 
+                    recently wrote surrounding how to place a Direct3D11 content window behind the desktop in order to make an animated wallpaper! 
+                </span>
+
+            </div>
         </section>
     )
 }

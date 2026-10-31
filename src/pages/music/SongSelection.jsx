@@ -1,13 +1,6 @@
 import { useState, useEffect, useRef } from "react"
 import "../../global-styles/SongSelection.css"
 
-
-/* 
-
-TO DO: 
-    - Correct initial behavior ("select a song" prompt or something)
-    - fix player styling in CSS
-*/
 export const SongSelection = ({setCurrentTrackPath, setCurrentTrackName, currentTrackName}) => {
     const [currentSelection, setCurrentSelection] = useState(null)
     useEffect(() => {
@@ -60,7 +53,7 @@ export const SongSelection = ({setCurrentTrackPath, setCurrentTrackName, current
     return (
         <div id="song-selection-container">
 
-            <div id="song-select-bode" className="song-selection-element" role="button" onClick={(event) => {
+            {/* <div id="song-select-bode" className="song-selection-element" role="button" onClick={(event) => {
                 if(currentSelection != event.currentTarget) {
                     updateTrack("/assets/audio/Bode.wav", "Bode")
                     setPreviousSelection(currentSelection)
@@ -84,6 +77,88 @@ export const SongSelection = ({setCurrentTrackPath, setCurrentTrackName, current
             onMouseLeave={removeHoverStyle}
             >
                 Randumb
+            </div> */}
+
+            <div id="song-select-elegy" className="song-selection-element" role="button" onClick={(event) =>{
+                if(currentSelection != event.currentTarget) {
+                    updateTrack("/assets/audio/GTTOD/Elegy.mp3", "Elegy In The Aftermath")
+                    setPreviousSelection(currentSelection)
+                    setCurrentSelection(event.currentTarget)
+                }
+            }}
+            onMouseEnter={triggerHoverStyle}
+            onMouseLeave={removeHoverStyle}
+            >
+            Elegy in the Aftermath (GTTOD)
+            </div>
+
+            <div id="song-select-spill" className="song-selection-element" role="button" onClick={(event) =>{
+                if(currentSelection != event.currentTarget) {
+                    updateTrack("/assets/audio/GTTOD/Spill.mp3", "Spill")
+                    setPreviousSelection(currentSelection)
+                    setCurrentSelection(event.currentTarget)
+                }
+            }}
+            onMouseEnter={triggerHoverStyle}
+            onMouseLeave={removeHoverStyle}
+            >
+                Spill (GTTOD)
+            </div>
+
+            <div id="song-select-trailer" className="song-selection-element" role="button" onClick={(event) =>{
+                if(currentSelection != event.currentTarget) {
+                    updateTrack("/assets/audio/GTTOD/Trailer.mp3", "Early Access Trailer #3")
+                    setPreviousSelection(currentSelection)
+                    setCurrentSelection(event.currentTarget)
+                }
+            }}
+            onMouseEnter={triggerHoverStyle}
+            onMouseLeave={removeHoverStyle}
+            >
+                Early Access Trailer #3 (GTTOD)
+            </div>
+
+            <div id="song-select-ode" className="song-selection-element" role="button" onClick={(event) =>{
+                if(currentSelection != event.currentTarget) {
+                    updateTrack("/assets/audio/GTTOD/Ode.mp3", "Ode to the End of the World")
+                    setPreviousSelection(currentSelection)
+                    setCurrentSelection(event.currentTarget)
+                }
+            }}
+            onMouseEnter={triggerHoverStyle}
+            onMouseLeave={removeHoverStyle}
+            >
+                Ode to the End of the World (GTTOD)
+            </div>
+
+            <div id="song-select-teleporter" className="song-selection-element" role="button" onClick={(event) =>{
+                if(currentSelection != event.currentTarget) {
+                    updateTrack("/assets/audio/GTTOD/Teleporter.mp3", "Teleporter Stinger")
+                    setPreviousSelection(currentSelection)
+                    setCurrentSelection(event.currentTarget)
+                }
+            }}
+            onMouseEnter={triggerHoverStyle}
+            onMouseLeave={removeHoverStyle}
+            >
+                Teleporter Stinger (GTTOD)
+            </div>
+
+            <span class="left-align">
+                . . . 
+            </span>
+
+            <div id="song-select-orchestral-unused" className="song-selection-element" role="button" onClick={(event) =>{
+                if(currentSelection != event.currentTarget) {
+                    updateTrack("/assets/audio/MISC/OrchestralUnused.mp3", "Orchestral Demo")
+                    setPreviousSelection(currentSelection)
+                    setCurrentSelection(event.currentTarget)
+                }
+            }}
+            onMouseEnter={triggerHoverStyle}
+            onMouseLeave={removeHoverStyle}
+            >
+                Unused Orchestral Demo
             </div>
 
         </div>

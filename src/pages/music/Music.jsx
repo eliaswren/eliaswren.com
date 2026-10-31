@@ -29,7 +29,6 @@ const Music = () => {
                 </div>
             </div>
             <About/>
-            <Contact/>
             <Footer/>
         </div>
     )
