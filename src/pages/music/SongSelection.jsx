@@ -52,33 +52,6 @@ export const SongSelection = ({setCurrentTrackPath, setCurrentTrackName, current
 
     return (
         <div id="song-selection-container">
-
-            {/* <div id="song-select-bode" className="song-selection-element" role="button" onClick={(event) => {
-                if(currentSelection != event.currentTarget) {
-                    updateTrack("/assets/audio/Bode.wav", "Bode")
-                    setPreviousSelection(currentSelection)
-                    setCurrentSelection(event.currentTarget)
-                }
-            }}
-            onMouseEnter={triggerHoverStyle}
-            onMouseLeave={removeHoverStyle}
-            >
-                Bode Test
-            </div>
-
-            <div id="song-select-randumb" className="song-selection-element" role="button" onClick={(event) =>{
-                if(currentSelection != event.currentTarget) {
-                    updateTrack("/assets/audio/Randumb.wav", "Randumb")
-                    setPreviousSelection(currentSelection)
-                    setCurrentSelection(event.currentTarget)
-                }
-            }}
-            onMouseEnter={triggerHoverStyle}
-            onMouseLeave={removeHoverStyle}
-            >
-                Randumb
-            </div> */}
-
             <div id="song-select-elegy" className="song-selection-element" role="button" onClick={(event) =>{
                 if(currentSelection != event.currentTarget) {
                     updateTrack("/assets/audio/GTTOD/Elegy.mp3", "Elegy In The Aftermath")

@@ -25,7 +25,7 @@ const Music = () => {
                     <SongSelection setCurrentTrackName={setCurrentTrackName} setCurrentTrackPath={setCurrentTrackPath}/>
                 </div>
                 <div id="demo-reel">
-                    <Video videoID="EBw8OMz3DKc"/>
+                    <Video videoID="su8hsW_MXqk"/>
                 </div>
             </div>
             <About/>
